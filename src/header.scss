@@ -1,9 +1,43 @@
+@import "@picocss/pico/scss/pico";
+
 * {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+h1, h2, p {
+    margin: 0;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 1px solid gray;
 }
+
+.form {
+    overflow-y: auto;
+    width: 50%;
+    
+    
+    
+    .title {
+        border-bottom: 1px solid gray;
+        margin-left: 1em;
+    }
+}
+
+.content {
+    padding: 2rem;
+}
+
+main {
+    height: 90vh;
+}
+
