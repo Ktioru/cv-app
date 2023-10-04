@@ -1,15 +1,19 @@
 import { useState } from 'react'
 
+import CV from './CV.jsx'
+
 
 
 function Form() {
+    const [name, setName] = useState("")
     
     
     
     
 
   return (
-    <div className='form'>
+    <main>
+<div className='form'>
       <form action="" method="get">
         <fieldset>
             <h2 className='title'>Personal Info</h2>
@@ -17,7 +21,7 @@ function Form() {
                 <div className="grid">
                     <label>
                         Name
-                        <input type="text" placeholder="First name" required />
+                        <input type="text" placeholder="First name" required onChange={(event) => setName(event.target.value)}/>
                     </label>
 
                     <label >
@@ -84,6 +88,7 @@ function Form() {
             </div>
             
         </fieldset>
+        
             
             
             
@@ -92,6 +97,9 @@ function Form() {
                 
       </form>
     </div>
+    <CV name={name}/>
+    </main>
+    
   )
 }
 

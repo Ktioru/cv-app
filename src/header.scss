@@ -23,7 +23,7 @@ header {
 
 .form {
     overflow-y: auto;
-    width: 50%;
+    width: 40%;
     
     
     
@@ -39,5 +39,7 @@ header {
 
 main {
     height: 90vh;
+    display: flex;
+    flex-direction: row;
 }
 

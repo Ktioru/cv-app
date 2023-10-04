@@ -2,14 +2,14 @@ import { useState } from 'react'
 
 
 
-function CV() {
+function CV({name}) {
     
     
     
 
   return (
     <>
-      
+      <p>{name}</p>
     </>
   )
 }
